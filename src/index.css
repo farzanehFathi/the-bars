@@ -1,0 +1,45 @@
+:root {
+  --primary-color--: white;
+  --accent-color--: black;
+  --branding-color--: orange;
+}
+
+body {
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: #ddd;
+}
+
+.pomo-card {
+  background-color: rgba(255, 255, 255, 0.304);
+  margin: 10px 0px;
+  padding: 0 10px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.pomo {
+  padding: 0px 10px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border: solid 1px var(--branding-color--);
+  text-align: center;
+  align-self: center;
+  width: 60px;
+}
+
+.bar {
+  background-color: yellowgreen;
+  margin: 5px;
+  align-self: center;
+  flex-grow: 1;
+}
+
+.percent {
+  width: 60px;
+  align-self: center;
+  text-align: center;
+}
