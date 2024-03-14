@@ -3,9 +3,9 @@
   --accent-color--: black;
   --branding-color--: orange;
 
-  --bar-color-1--: red;
-  --bar-color-2--: yellow;
-  --bar-color-3--: green;
+  --bar-color-1--: #f03a17;
+  --bar-color-2--: #fce100;
+  --bar-color-3--: #bad80a;
 }
 
 body {
@@ -40,7 +40,7 @@ header {
 }
 
 .bar {
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
   margin: 5px;
   align-self: center;
   flex-grow: 1;
