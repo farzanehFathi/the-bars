@@ -2,6 +2,10 @@
   --primary-color--: white;
   --accent-color--: black;
   --branding-color--: orange;
+
+  --bar-color-1--: red;
+  --bar-color-2--: yellow;
+  --bar-color-3--: green;
 }
 
 body {
@@ -21,8 +25,8 @@ body {
 }
 
 .pomo {
-  padding: 0px 10px;
-  margin: 5px;
+  padding: 5px;
+  margin: 3px;
   background-color: white;
   border-radius: 5px;
   border: solid 1px var(--branding-color--);
@@ -36,6 +40,18 @@ body {
   margin: 5px;
   align-self: center;
   flex-grow: 1;
+}
+
+.bar1 {
+  background-color: var(--bar-color-1--);
+}
+
+.bar2 {
+  background-color: var(--bar-color-2--);
+}
+
+.bar3 {
+  background-color: var(--bar-color-3--);
 }
 
 .percent {
