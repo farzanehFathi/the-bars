@@ -1,0 +1,29 @@
+{
+  "pomos": [
+    {
+      "id": 1,
+      "pomo": "🍅",
+      "color-code": 1,
+      "numbers": 22,
+      "goal": 50,
+      "percent": 45
+    },
+    {
+      "id": 2,
+      "pomo": "🍋",
+      "color-code": 2,
+      "numbers": 13,
+      "goal": 20,
+      "percent": 63
+    },
+    ,
+    {
+      "id": 3,
+      "pomo": "🥦",
+      "color-code": 3,
+      "numbers": 33,
+      "goal": 40,
+      "percent": 78
+    }
+  ]
+}
