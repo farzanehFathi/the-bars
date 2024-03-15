@@ -11,10 +11,10 @@ export default function PomoLog() {
   const [pomo] = createResource(param.id, fetchPomo);
 
   return (
+    // <Show when={pomo()} fallback={"Loading..."}>
     <div>
-      <Show when={pomo()} fallback={"Loading..."}>
-        <p>this is for pomo + {pomo().pomo} </p>
-      </Show>
+      <p>this is for pomo + {pomo().pomo} </p>
     </div>
+    // </Show>
   );
 }
