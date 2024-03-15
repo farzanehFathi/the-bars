@@ -13,10 +13,11 @@ export default function Home() {
       <For each={pomos()}>
         {(pomo) => (
           <Card>
-            <h2 class="pomo">{pomo.pomo}</h2>
-            <p class="bar" style={{ backgroundColor: pomo.color }}>
-              .{" "}
-            </p>
+            <a href={"/pomlog/" + pomo.id}>
+              <h2 class="pomo">{pomo.pomo}</h2>
+            </a>
+
+            <p class="bar">. </p>
             <h3 class="percent">{pomo.percent}</h3>
           </Card>
         )}

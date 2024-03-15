@@ -1,6 +1,7 @@
 import { Router, Route } from "@solidjs/router";
 import Home from "./pages/Home";
 import MonthLog from "./pages/MonthLog";
+import PomoLog from "./pages/pomolog";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Route path="/" component={Home} />
         <Route path="/monthlog" component={MonthLog} />
+        <Route path="/pomolog/:id" component={PomoLog} />
       </Router>
     </div>
   );
