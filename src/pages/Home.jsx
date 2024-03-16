@@ -17,8 +17,13 @@ export default function Home() {
               <h2 class="pomo">{pomo.pomo}</h2>
             </a>
 
-            <p class="bar">. </p>
-            <h3 class="percent">{pomo.percent}</h3>
+            <div class={"bar"}>
+              <p class={"progress"} style={"background:" + pomo.color}>
+                {pomo.percent}
+              </p>
+            </div>
+
+            <h3 class="percent">{pomo.numbers}</h3>
           </Card>
         )}
       </For>

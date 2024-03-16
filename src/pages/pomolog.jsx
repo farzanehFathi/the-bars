@@ -10,6 +10,7 @@ export default function PomoLog() {
   const param = useParams();
   const [pomo] = createResource(param.id, fetchPomo);
 
+  console.log(pomo());
   return (
     // <Show when={pomo()} fallback={"Loading..."}>
     <div>
