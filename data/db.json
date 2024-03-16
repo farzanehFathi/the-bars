@@ -4,25 +4,25 @@
       "id": "1",
       "pomo": "🍅",
       "color": "#f03a17",
-      "numbers": 22,
+      "nums": 22,
       "goal": 50,
-      "percent": 45
+      "progress": 47
     },
     {
       "id": "2",
       "pomo": "🍋",
       "color": "#fce100",
-      "numbers": 13,
+      "nums": 13,
       "goal": 20,
-      "percent": 63
+      "progress": 25
     },
     {
       "id": "3",
       "pomo": "🥦",
       "color": "#bad80a",
-      "numbers": 33,
+      "nums": 33,
       "goal": 40,
-      "percent": 78
+      "progress": 78
     }
   ]
 }

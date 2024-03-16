@@ -1,5 +1,5 @@
 :root {
-  --primary-color--: whitesmoke;
+  --primary-color--: white;
   --accent-color--: black;
   --branding-color--: orange;
 }
@@ -24,35 +24,39 @@ a {
   padding: 0 10px;
   border-radius: 5px;
 
+  height: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pomo {
-  padding: 5px;
-  margin: 3px;
+  padding: 0 0 7px;
+  /* margin: 3px; */
   background-color: white;
   border-radius: 5px;
   border: solid 1px var(--branding-color--);
   text-align: center;
-  align-self: center;
+
   width: 60px;
 }
 
 .bar {
-  background-color: "whitesmoke";
-  height: 100%;
+  background-color: whitesmoke;
   width: 100%;
+  height: 20px;
   margin: 5px;
   align-self: center;
   flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
-.progress {
+.progress-bar {
   text-align: right;
 }
 
-.percent {
+.progress {
   width: 60px;
   align-self: center;
   text-align: center;
