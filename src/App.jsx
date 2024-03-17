@@ -1,7 +1,7 @@
 import { Router, Route } from "@solidjs/router";
 import Home from "./pages/Home";
 import MonthLog from "./pages/MonthLog";
-import PomoLog from "./pages/pomolog";
+import PomoLog from "./pages/PomoLog";
 
 function App() {
   return (

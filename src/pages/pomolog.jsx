@@ -1,21 +1,23 @@
 import { useParams } from "@solidjs/router";
-import { Show, createResource } from "solid-js";
+import { createResource } from "solid-js";
 
 const fetchPomo = async (id) => {
   const res = await fetch("http://localhost:4000/pomos/" + id);
-  return res.json;
+  return res.json();
 };
 
 export default function PomoLog() {
-  const param = useParams();
-  const [pomo] = createResource(param.id, fetchPomo);
+  const params = useParams();
+
+  const [pomo] = createResource(params.id, fetchPomo);
 
   console.log(pomo());
   return (
-    // <Show when={pomo()} fallback={"Loading..."}>
     <div>
-      <p>this is for pomo + {pomo().pomo} </p>
+      <Show when={pomo()} fallback={<p>Loading...</p>}>
+        <h2>{pomo().pomo}</h2>
+        <h3>{pomo().nums}</h3>
+      </Show>
     </div>
-    // </Show>
   );
 }

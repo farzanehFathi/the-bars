@@ -23,6 +23,14 @@
       "nums": 33,
       "goal": 40,
       "progress": 78
+    },
+    {
+      "id": "4",
+      "pomo": "🍉",
+      "color": "#3EFFBD",
+      "nums": 42,
+      "goal": 50,
+      "progress": 84
     }
   ]
 }
