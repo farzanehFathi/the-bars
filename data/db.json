@@ -3,7 +3,7 @@
     {
       "id": "1",
       "pomo": "🍅",
-      "color": "#f03a17",
+      "color": "#F03A17",
       "nums": 22,
       "goal": 50,
       "progress": 47
@@ -19,7 +19,7 @@
     {
       "id": "3",
       "pomo": "🥦",
-      "color": "#bad80a",
+      "color": "#71A921",
       "nums": 33,
       "goal": 40,
       "progress": 78
@@ -27,8 +27,16 @@
     {
       "id": "4",
       "pomo": "🍉",
-      "color": "#3EFFBD",
+      "color": "#19B294",
       "nums": 42,
+      "goal": 50,
+      "progress": 84
+    },
+    {
+      "id": "5",
+      "pomo": "🍇",
+      "color": "#5F50A3",
+      "nums": 22,
       "goal": 50,
       "progress": 84
     }

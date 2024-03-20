@@ -6,14 +6,15 @@ import Time from "./components/Time";
 
 function App() {
   return (
-    <div class="container m-auto">
+    <div class="container">
       <header>
         <a href="/">
           <h1 class="text-3xl font-bold">{Time()}</h1>
         </a>
+
         <a href="/monthlog">Month log</a>
       </header>
-
+      <hr />
       <Router>
         <Route path="/" component={Home} />
         <Route path="/monthlog" component={MonthLog} />
