@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary-font--: Nunito;
   --primary-color--: white;
@@ -10,7 +14,7 @@
 
 body {
   font-family: var(--primary-font--);
-  width: 800px;
+  max-width: 600px;
   margin: 40px auto;
   background-color: var(--primary-color--);
 }
@@ -24,6 +28,12 @@ a {
   text-decoration: none;
   color: var(--secondary-color--);
 }
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .pomo-card {
   background-color: rgba(255, 255, 255, 0.304);
   margin: 10px 0px;
@@ -34,16 +44,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.pomo-card .pomo {
-  padding: 0 0 7px;
-  background-color: white;
-  border-radius: 5px;
-  border: solid 1px var(--branding-color--);
-  text-align: center;
-
-  width: 60px;
 }
 
 .pomo-card .bar {
@@ -67,41 +67,17 @@ a {
   text-align: center;
 }
 
-.vertical-card-holder {
-  display: flex;
-  /* justify-content: space-between; */
-  gap: 80px;
-  padding: 3%;
-}
-.vertical-card {
-  display: flex;
-  flex-direction: column;
-  width: 110px;
-}
-
-.vertical-card .counter {
-  display: flex;
-  font-size: 32px;
-  height: 110px;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary-color--);
-}
-
-.vertical-card .pomo {
+.pomo {
   font-family: "Noto Color Emoji", sans-serif;
-  display: flex;
-  font-size: 50px;
-  height: 140px;
-  justify-content: center;
-  align-items: center;
+  aspect-ratio: 1 / 1.25;
 }
 
-.vertical-card .timer {
-  font-family: "Noto Color Emoji", sans-serif;
-  display: flex;
-  font-size: 50px;
-  height: 110px;
+.counter {
+  aspect-ratio: 1 / 1;
   justify-content: center;
-  align-items: center;
+}
+
+.timer {
+  font-family: "Noto Color Emoji", sans-serif;
+  aspect-ratio: 1 / 1;
 }

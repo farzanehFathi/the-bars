@@ -19,7 +19,7 @@ export default function PomoLog() {
         <h2 class="pomo">{pomo().pomo}</h2>
         <Card>
           <div class={"bar"}>
-            <h3 class="pomo">Weekly</h3>
+            <h3>Weekly</h3>
             <p
               class={"progress-bar"}
               style={

@@ -12,23 +12,26 @@ export default function Home() {
 
   return (
     <div>
-      <div class="vertical-card-holder">
+      <div class="grid grid-cols-5 gap-10 my-4">
         <For each={pomos()}>
           {(pomo) => (
             <VerticalCard>
               <div
-                class="vertical-card"
+                class="grid grid-cols-1"
                 style={"border:2px solid" + pomo.color}
               >
-                <div class="counter" style={"background:" + pomo.color}>
+                <div
+                  class="counter center text-3xl text-white"
+                  style={"background:" + pomo.color}
+                >
                   {pomo.nums}
                 </div>
 
                 <a href={"/pomolog/" + pomo.id}>
-                  <div class="pomo">{pomo.pomo}</div>
+                  <div class="pomo center text-4xl">{pomo.pomo}</div>
                 </a>
                 <div
-                  class="timer"
+                  class="timer center text-3xl text-center"
                   style={
                     "color:" +
                     pomo.color +
