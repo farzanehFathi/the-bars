@@ -2,7 +2,7 @@ import { Show, createResource } from "solid-js";
 import Card from "../components/Card";
 
 const fetchPomos = async () => {
-  const res = await fetch("http://localhost:4000/pomos");
+  const res = await fetch("http://localhost:4001/pomos");
   return res.json();
 };
 

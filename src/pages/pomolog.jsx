@@ -2,7 +2,7 @@ import { useParams } from "@solidjs/router";
 import { createResource } from "solid-js";
 
 const fetchPomo = async (id) => {
-  const res = await fetch("http://localhost:4000/pomos/" + id);
+  const res = await fetch("http://localhost:4001/pomos/" + id);
   return res.json();
 };
 

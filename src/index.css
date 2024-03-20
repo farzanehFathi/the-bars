@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 :root {
+  --primary-font--: Nunito;
   --primary-color--: white;
-  --accent-color--: black;
+  --secondary-color--: black;
   --branding-color--: orange;
 }
 
 body {
+  font-family: var(--primary-font--);
   margin: 40px auto;
   max-width: 600px;
-  background-color: #ddd;
+  background-color: var(--primary-color--);
 }
 
 header {
@@ -17,6 +21,7 @@ header {
 
 a {
   text-decoration: none;
+  color: var(--secondary-color--);
 }
 .pomo-card {
   background-color: rgba(255, 255, 255, 0.304);
