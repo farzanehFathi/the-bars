@@ -1,6 +1,6 @@
 import { For, Show, createResource } from "solid-js";
-import Card from "../components/Card";
 import VerticalCard from "../components/VerticalCard";
+import WeekLog from "../components/WeekLog";
 
 const fetchPomos = async () => {
   const res = await fetch("http://localhost:4001/pomos");
@@ -48,6 +48,7 @@ export default function Home() {
           </For>
         </div>
       </Show>
+      <WeekLog />
     </div>
   );
 }

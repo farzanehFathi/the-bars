@@ -19,7 +19,7 @@ export default function PomoLog() {
             <h2 class="col-span-2">Weekly Progress</h2>
             <div class="col-span-5 progress-bar">
               <h3
-                class="text-end px-2"
+                class="text-end px-2 text-white"
                 style={
                   "background-color:" +
                   pomo().color +
