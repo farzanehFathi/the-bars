@@ -6,7 +6,7 @@ export default function WeekLog() {
 
   return (
     <div>
-      this is weekly progress
+      this is weekly progress of
       <For each={pomos}>
         {(pomo) => (
           <p class="my-3">

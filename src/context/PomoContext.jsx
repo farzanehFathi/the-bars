@@ -4,18 +4,7 @@ import { createStore } from "solid-js/store";
 export const PomoContext = createContext();
 
 export default function PomoContextProvider(props) {
-  const [pomos, setPomos] = createStore([
-    {
-      pomo: "🍅",
-      nums: 5,
-      id: 1,
-    },
-    {
-      pomo: "🍋",
-      nums: 3,
-      id: 2,
-    },
-  ]);
+  const [pomos, setPomos] = createStore([]);
 
   return (
     <PomoContext.Provider value={{ pomos, setPomos }}>

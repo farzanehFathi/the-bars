@@ -32,7 +32,7 @@ export default function Home() {
                     <div class="pomo center text-4xl">{pomo.pomo}</div>
                   </a>
                   <div
-                    class="timer center text-3xl text-center"
+                    class="btn timer center text-3xl text-center"
                     style={
                       "color:" +
                       pomo.color +
