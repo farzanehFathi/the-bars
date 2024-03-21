@@ -1,6 +1,7 @@
 import { For, Show, createResource } from "solid-js";
 import VerticalCard from "../components/VerticalCard";
 import WeekLog from "../components/WeekLog";
+import PomoLoger from "../components/PomoLoger";
 
 const fetchPomos = async () => {
   const res = await fetch("http://localhost:4001/pomos");
@@ -28,19 +29,19 @@ export default function Home() {
                     {pomo.nums}
                   </div>
 
-                  <a href={"/pomolog/" + pomo.id}>
+                  <a href={"/pomoreview/" + pomo.id}>
                     <div class="pomo center text-4xl">{pomo.pomo}</div>
                   </a>
                   <div
-                    class="btn timer center text-3xl text-center"
+                    class="timer center text-3xl text-center"
                     style={
-                      "color:" +
+                      "cursor: pointer; color:" +
                       pomo.color +
                       "; border-top: 2px solid" +
                       pomo.color
                     }
                   >
-                    ⏳
+                    <PomoLoger id={pomo.id} />
                   </div>
                 </div>
               </VerticalCard>

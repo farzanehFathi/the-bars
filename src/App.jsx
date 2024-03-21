@@ -1,6 +1,6 @@
 import { Router, Route } from "@solidjs/router";
 import Home from "./pages/Home";
-import PomoLog from "./pages/PomoLog";
+import PomoReview from "./pages/PomoReview";
 import Time from "./components/Time";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <hr />
       <Router>
         <Route path="/" component={Home} />
-        <Route path="/pomolog/:id" component={PomoLog} />
+        <Route path="/pomoreview/:id" component={PomoReview} />
       </Router>
     </div>
   );
