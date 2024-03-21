@@ -49,7 +49,11 @@ export default function Home() {
           </For>
         </div>
       </Show>
-      <WeekLog />
+      <WeekLog id={"1"} />
+      <WeekLog id={"2"} />
+      <WeekLog id={"3"} />
+      <WeekLog id={"4"} />
+      <WeekLog id={"5"} />
     </div>
   );
 }

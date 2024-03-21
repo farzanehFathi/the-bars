@@ -4,41 +4,31 @@
       "id": "1",
       "pomo": "🍅",
       "color": "#F03A17",
-      "nums": 22,
-      "goal": 50,
-      "progress": 47
+      "goal": 50
     },
     {
       "id": "2",
       "pomo": "🍋",
       "color": "#FCC219",
-      "nums": 13,
-      "goal": 20,
-      "progress": 25
+      "goal": 20
     },
     {
       "id": "3",
       "pomo": "🥦",
       "color": "#71A921",
-      "nums": 33,
-      "goal": 40,
-      "progress": 78
+      "goal": 40
     },
     {
       "id": "4",
       "pomo": "🍉",
       "color": "#19B294",
-      "nums": 42,
-      "goal": 50,
-      "progress": 84
+      "goal": 50
     },
     {
       "id": "5",
       "pomo": "🍇",
       "color": "#5F50A3",
-      "nums": 22,
-      "goal": 50,
-      "progress": 84
+      "goal": 50
     }
   ]
 }

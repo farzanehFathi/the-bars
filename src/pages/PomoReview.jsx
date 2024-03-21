@@ -12,31 +12,13 @@ export default function PomoReview() {
   const params = useParams();
   const [pomo] = createResource(params.id, fetchPomo);
 
+  const stringId = params.id.toString();
+
   return (
     <div class="my-5">
       <Show when={pomo()} fallback={<p>Loading...</p>}>
-        <Card>
-          <div class="grid grid-cols-9 gap-2">
-            <h2 class="col-span-2">Weekly Progress</h2>
-            <div class="col-span-5 progress-bar">
-              <h3
-                class="text-end px-2 text-white"
-                style={
-                  "background-color:" +
-                  pomo().color +
-                  "; width:" +
-                  pomo().progress +
-                  "%"
-                }
-              >
-                {pomo().progress}%
-              </h3>
-            </div>
-            <h3 class="col-span-2">{pomo().nums} Pomos</h3>
-          </div>
-        </Card>
+        <WeekLog id={stringId} />
       </Show>
-      <WeekLog />
     </div>
   );
 }
