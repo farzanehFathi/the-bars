@@ -1,5 +1,5 @@
 import { useParams } from "@solidjs/router";
-import { createResource } from "solid-js";
+import { Show, createResource } from "solid-js";
 import Card from "../components/Card";
 
 const fetchPomo = async (id) => {
@@ -9,32 +9,30 @@ const fetchPomo = async (id) => {
 
 export default function PomoLog() {
   const params = useParams();
-
   const [pomo] = createResource(params.id, fetchPomo);
 
-  console.log(pomo());
   return (
-    <div>
+    <div class="my-5">
       <Show when={pomo()} fallback={<p>Loading...</p>}>
-        <h2 class="pomo">{pomo().pomo}</h2>
         <Card>
-          <div class={"bar"}>
-            <h3>Weekly</h3>
-            <p
-              class={"progress-bar"}
-              style={
-                "background:" +
-                pomo().color +
-                "; width:" +
-                pomo().progress +
-                "%"
-              }
-            >
-              {pomo().progress}
-            </p>
+          <div class="grid grid-cols-9 gap-2">
+            <h2 class="col-span-2">Weekly Progress</h2>
+            <div class="col-span-5 progress-bar">
+              <h3
+                class="text-end px-2"
+                style={
+                  "background-color:" +
+                  pomo().color +
+                  "; width:" +
+                  pomo().progress +
+                  "%"
+                }
+              >
+                {pomo().progress}%
+              </h3>
+            </div>
+            <h3 class="col-span-2">{pomo().nums} Pomos</h3>
           </div>
-
-          <h3 class="progress">{pomo().nums}</h3>
         </Card>
       </Show>
     </div>
