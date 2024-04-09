@@ -4,7 +4,7 @@ import WeekLog from "../components/WeekLog";
 import PomoLoger from "../components/PomoLoger";
 
 const fetchPomos = async () => {
-  const res = await fetch("http://localhost:4001/pomos");
+  const res = await fetch("http://localhost:4000/pomos");
   return res.json();
 };
 

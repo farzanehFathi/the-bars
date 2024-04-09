@@ -2,7 +2,7 @@ import { createResource } from "solid-js";
 import { usePomoContext } from "../context/PomoContext";
 
 const fetchPomo = async (id) => {
-  const res = await fetch("http://localhost:4001/pomos/" + id);
+  const res = await fetch("http://localhost:4000/pomos/" + id);
   return res.json();
 };
 
@@ -25,5 +25,5 @@ export default function PomoLoger(props) {
     }
   };
 
-  return <div onClick={addPomo}>⏳</div>;
+  return <div onClick={addPomo}>⏱</div>;
 }

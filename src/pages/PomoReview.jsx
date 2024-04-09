@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import WeekLog from "../components/WeekLog";
 
 const fetchPomo = async (id) => {
-  const res = await fetch("http://localhost:4001/pomos/" + id);
+  const res = await fetch("http://localhost:4000/pomos/" + id);
   return res.json();
 };
 
