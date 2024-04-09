@@ -2,9 +2,10 @@ import { For, Show, createResource } from "solid-js";
 import VerticalCard from "../components/VerticalCard";
 import WeekLog from "../components/WeekLog";
 import PomoLoger from "../components/PomoLoger";
+import emoji_u1f345 from "../assets/emoji_u1f345.svg";
 
 const fetchPomos = async () => {
-  const res = await fetch("http://localhost:4001/pomos");
+  const res = await fetch("http://localhost:4000/pomos");
   return res.json();
 };
 
@@ -30,7 +31,9 @@ export default function Home() {
                   </div>
 
                   <a href={"/pomoreview/" + pomo.id}>
-                    <div class="pomo center text-4xl">{pomo.pomo}</div>
+                    <div class="pomo center text-4xl">
+                      <img src={pomo.emojiCode} alt={pomo.pomo} />
+                    </div>
                   </a>
                   <div
                     class="timer center text-3xl text-center"

@@ -1,5 +1,6 @@
 import { createResource } from "solid-js";
 import { usePomoContext } from "../context/PomoContext";
+import stopWatch from "../assets/emoji_u23f1.svg";
 
 const fetchPomo = async (id) => {
   const res = await fetch("http://localhost:4001/pomos/" + id);
@@ -25,5 +26,9 @@ export default function PomoLoger(props) {
     }
   };
 
-  return <div onClick={addPomo}>⏳</div>;
+  return (
+    <div onClick={addPomo}>
+      <img src={stopWatch} width="50px" />
+    </div>
+  );
 }

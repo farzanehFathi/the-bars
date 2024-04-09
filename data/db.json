@@ -3,30 +3,35 @@
     {
       "id": "1",
       "pomo": "🍅",
+      "emojiCode": "emoji_u1f345",
       "color": "#F03A17",
       "goal": 50
     },
     {
       "id": "2",
       "pomo": "🍋",
+      "emojiCode": "emoji_u1f34b.svg",
       "color": "#FCC219",
       "goal": 20
     },
     {
       "id": "3",
       "pomo": "🥦",
+      "emojiCode": "emoji_u1f966.svg",
       "color": "#71A921",
       "goal": 40
     },
     {
       "id": "4",
       "pomo": "🍉",
+      "emojiCode": "emoji_u1f349.svg",
       "color": "#19B294",
       "goal": 50
     },
     {
       "id": "5",
       "pomo": "🍇",
+      "emojiCode": "emoji_u1f347.svg",
       "color": "#5F50A3",
       "goal": 50
     }
