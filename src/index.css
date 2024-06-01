@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-font--: Nunito;
+  --primary-color--: white;
+  --secondary-color--: black;
+  --branding-color--: orange;
+}
+
+body {
+  font-family: var(--primary-font--);
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: var(--primary-color--);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color--);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar {
+  background-color: whitesmoke;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.pomo {
+  font-family: "Noto Color Emoji", sans-serif;
+  aspect-ratio: 1 / 1.25;
+}
+
+.counter {
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+}
+
+.timer {
+  font-family: "Noto Color Emoji", sans-serif;
+  aspect-ratio: 1 / 1;
+}
