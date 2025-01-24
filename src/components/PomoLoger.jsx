@@ -19,11 +19,13 @@ export default function PomoLoger(props) {
         "nums",
         (n) => n + 1
       );
-    }
-    if (!exsits) {
+    } else {
       setPomos([...pomos, { ...pomo(), nums: 1 }]);
     }
   };
-
-  return <div onClick={addPomo}>⏱</div>;
+  return (
+    <Show when={pomo()} fallback={<div> 🖱 </div>}>
+      <img src={pomo().clickIcon} onClick={addPomo} alt="Pomo" />
+    </Show>
+  );
 }

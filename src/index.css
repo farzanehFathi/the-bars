@@ -41,6 +41,9 @@ a {
   height: fit-content;
   display: flex;
   align-items: center;
+  border-radius: 5px;
+  border: 1px solid rgba(148, 147, 147, 0.54);
+  margin-bottom: 10px;
 }
 
 .pomo {
@@ -48,12 +51,55 @@ a {
   aspect-ratio: 1 / 1.25;
 }
 
+.pomo:hover {
+  scale: 1.3;
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .counter {
   aspect-ratio: 1 / 1;
   justify-content: center;
 }
 
-.timer {
+.counter:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.counter {
   font-family: "Noto Color Emoji", sans-serif;
   aspect-ratio: 1 / 1;
+  padding: 10%;
+}
+
+.counter-icon:hover {
+  -webkit-filter: drop-shadow(0 0 0.75rem silver);
+  animation: rotate 1s ease-in-out 2ms 1 normal none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
+  }
 }

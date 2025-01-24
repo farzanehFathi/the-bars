@@ -19,29 +19,41 @@ export default function Home() {
             {(pomo) => (
               <VerticalCard>
                 <div
-                  class="grid grid-cols-1"
-                  style={"border:2px solid" + pomo.color}
+                  style={
+                    "padding:1px; border:1px solid rgba(148, 147, 147, 0.54); border-radius: 10px"
+                  }
                 >
                   <div
-                    class="counter center text-3xl text-white"
-                    style={"background:" + pomo.color}
+                    class="grid grid-cols-1"
+                    style={"border-radius:9px; border:1px solid" + pomo.color}
                   >
-                    {pomo.nums}
-                  </div>
+                    <div
+                      class="counter center text-3xl text-white"
+                      style={
+                        "background:" +
+                        pomo.color +
+                        "; border-radius: 8px 8px 0 0"
+                      }
+                    >
+                      {pomo.nums}
+                    </div>
 
-                  <a href={"/pomoreview/" + pomo.id}>
-                    <div class="pomo center text-4xl">{pomo.pomo}</div>
-                  </a>
-                  <div
-                    class="timer center text-3xl text-center"
-                    style={
-                      "cursor: pointer; color:" +
-                      pomo.color +
-                      "; border-top: 2px solid" +
-                      pomo.color
-                    }
-                  >
-                    <PomoLoger id={pomo.id} />
+                    <a href={"/pomoreview/" + pomo.id}>
+                      <div class="pomo center text-4xl">{pomo.pomo}</div>
+                    </a>
+                    <div
+                      class="counter center text-3xl text-center"
+                      style={
+                        "cursor: pointer; color:" +
+                        pomo.color +
+                        "; border-top: 1px solid" +
+                        pomo.color
+                      }
+                    >
+                      <div class="counter-icon">
+                        <PomoLoger id={pomo.id} />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </VerticalCard>
@@ -49,6 +61,8 @@ export default function Home() {
           </For>
         </div>
       </Show>
+      <h2>Weekly Progress</h2>
+      <hr />
       <WeekLog id={"1"} />
       <WeekLog id={"2"} />
       <WeekLog id={"3"} />
