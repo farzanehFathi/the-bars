@@ -6,12 +6,7 @@ import {
 } from "solid-js";
 import { createStore } from "solid-js/store";
 
-import PomoItems from "../assets/PomoItems";
-
-// const fetchPomos = async () => {
-//   const res = await fetch("http://localhost:4000/pomos");
-//   return res.json();
-// };
+import PomoItems from "../assets/pomoitems";
 
 export const PomoContext = createContext();
 
