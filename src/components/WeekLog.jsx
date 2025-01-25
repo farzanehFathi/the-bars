@@ -13,7 +13,7 @@ export default function WeekLog(props) {
             <Card>
               <div class="grid grid-cols-9 gap-2 my-2">
                 <h2
-                  class="col-span-1 center"
+                  class="col-span-1 center text-3xl"
                   style="font-family: Noto Color Emoji , sans-serif"
                 >
                   {pomo.pomo}
@@ -32,7 +32,9 @@ export default function WeekLog(props) {
                     {(pomo.nums * 100) / pomo.goal}%
                   </h3>
                 </div>
-                <h3 class="col-span-2">{pomo.nums} Pomos</h3>
+                <h3 class="col-span-2 center">
+                  {pomo.nums} / {pomo.goal} Pomos
+                </h3>
               </div>
             </Card>
           </Show>

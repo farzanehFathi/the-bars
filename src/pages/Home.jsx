@@ -1,21 +1,18 @@
-import { For, Show, createResource } from "solid-js";
+import { For, Show } from "solid-js";
+import { usePomoContext } from "../context/PomoContext";
+
 import VerticalCard from "../components/VerticalCard";
 import WeekLog from "../components/WeekLog";
 import PomoLoger from "../components/PomoLoger";
 
-const fetchPomos = async () => {
-  const res = await fetch("http://localhost:4000/pomos");
-  return res.json();
-};
-
 export default function Home() {
-  const [pomos] = createResource(fetchPomos);
+  const { pomos, loading } = usePomoContext();
 
   return (
     <div>
-      <Show when={pomos()} fallback={<p>Loading...</p>}>
+      <Show when={!loading} fallback={<p>Loading...</p>}>
         <div class="grid grid-cols-5 gap-10 my-4">
-          <For each={pomos()}>
+          <For each={pomos}>
             {(pomo) => (
               <VerticalCard>
                 <div
@@ -28,7 +25,7 @@ export default function Home() {
                     style={"border-radius:9px; border:1px solid" + pomo.color}
                   >
                     <div
-                      class="counter center text-3xl text-white"
+                      class="counts center text-3xl text-white"
                       style={
                         "background:" +
                         pomo.color +
@@ -38,9 +35,8 @@ export default function Home() {
                       {pomo.nums}
                     </div>
 
-                    <a href={"/pomoreview/" + pomo.id}>
-                      <div class="pomo center text-4xl">{pomo.pomo}</div>
-                    </a>
+                    <div class="pomo center text-4xl">{pomo.pomo}</div>
+
                     <div
                       class="counter center text-3xl text-center"
                       style={
@@ -61,7 +57,7 @@ export default function Home() {
           </For>
         </div>
       </Show>
-      <h2>Weekly Progress</h2>
+      <h2 class="text-2xl">Weekly Progress</h2>
       <hr />
       <WeekLog id={"1"} />
       <WeekLog id={"2"} />
